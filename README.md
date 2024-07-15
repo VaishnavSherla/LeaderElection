@@ -5,6 +5,15 @@ This project demonstrates a leader election mechanism using Apache Zookeeper. Le
 
 Zookeeper provides a reliable way to implement leader election due to its distributed coordination service and ability to manage ephemeral sequential znodes.
 
+## How it works
+![How it works](LeaderElection.png)
+
+- Connects to zookeeper.
+- Leader Election
+    - Volunteering (Every node volunteer for leadership)
+    - Leader Selection (Leasr sequence number)
+    - Watcher (Watches just one before node, Solving thunder herd problem)
+
 ## Demo
 ![Demo](LeaderElection.gif)
 
@@ -17,10 +26,3 @@ Zookeeper provides a reliable way to implement leader election due to its distri
 - **Zookeeper Setup:** Ensure Zookeeper is running locally on localhost:2181.
 - **Build Project: ** mvn package
 - **Run**: Execute java -jar leader-election-1.0-SNAPSHOT-jar-with-dependencies.jar
-
-## How it works
-- Connects to zookeeper.
-- Leader Election
-    - Volunteering (Every node volunteer for leadership)
-    - Leader Selection (Leasr sequence number)
-    - Watcher (Watches just one before node, Solving thunder herd problem)
