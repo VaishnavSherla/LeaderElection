@@ -24,5 +24,5 @@ Zookeeper provides a reliable way to implement leader election due to its distri
 
 ## Setup and Execution
 - **Zookeeper Setup:** Ensure Zookeeper is running locally on localhost:2181.
-- **Build Project: ** mvn package
+- **Build Project:** mvn package
 - **Run**: Execute java -jar leader-election-1.0-SNAPSHOT-jar-with-dependencies.jar
