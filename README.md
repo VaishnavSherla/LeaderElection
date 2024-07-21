@@ -11,8 +11,7 @@ Zookeeper provides a reliable way to implement leader election due to its distri
 - Connects to zookeeper.
 - Leader Election
     - Volunteering (Every node volunteer for leadership)
-    - Leader Selection (Leasr sequence number)
-    - Watcher (Watches just one before node, Solving thunder herd problem)
+    - Leader Selection (Least sequence number)
 
 ## Demo
 ![Demo](LeaderElection.gif)
